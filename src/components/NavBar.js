@@ -1,4 +1,5 @@
 import React from "react";
+import GifSearch from "./GifSearch";
 
 function NavBar({ color, title }) {
   const colors = {
@@ -7,6 +8,7 @@ function NavBar({ color, title }) {
   };
 
   return (
+    <>
     <nav className={`navbar ${colors[color]}`}>
       <div className="container-fluid">
         <div className="navbar-header">
@@ -14,6 +16,8 @@ function NavBar({ color, title }) {
         </div>
       </div>
     </nav>
+    <GifSearch/>
+    </>
   );
 }
 
